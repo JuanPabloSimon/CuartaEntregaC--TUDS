@@ -26,30 +26,34 @@ struct Nodo {
     Nodo *siguiente;
 };
 Las colas y pilas son manipuladas con punteros frente y fin.
+```
 
-🖥️ Uso
-Compila el programa:
+## 🖥️ Uso
 
-bash
-Copiar
-Editar
+1. Compila el programa:
+### Bash
+```bash
 g++ -o alumnos main.cpp
-Ejecuta:
-
-bash
-Copiar
-Editar
+```
+2. Ejecuta:
+### Bash
+```bash
 ./alumnos
-Sigue las opciones del menú para gestionar los alumnos en dos colas independientes.
+```
+3. Sigue las opciones del menú para gestionar los alumnos en dos colas independientes.
 
-✅ Requisitos
-Compilador C++ (por ejemplo, g++)
 
-📌 Mejoras sugeridas
-Validación de entradas.
+## ✅ Requisitos
 
-Uso de std::string en vez de char[].
+- Compilador C++ (por ejemplo, g++).
+- Sistema operativo compatible con la terminal (Linux, macOS, Windows con CMD/Powershell).
 
-Guardar y cargar datos desde archivos.
+## 📌 Mejoras sugeridas
 
-Interfaz gráfica con Qt o SFML.
+- Validación de entradas.
+
+- Uso de std::string en vez de char[].
+
+- Guardar y cargar datos desde archivos.
+
+- Interfaz gráfica con Qt o SFML.
