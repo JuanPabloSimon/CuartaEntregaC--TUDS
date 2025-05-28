@@ -104,7 +104,6 @@ void menu() {
 					cout<<"Seleccion de pila incorrecta"<<endl;	
 				}
 				
-					
 				if (pila_vacia(aux)) {
 					cout<<"\n La píla esta vacia, no hay alumnos para comparar"<<endl;
 					break;
@@ -125,33 +124,20 @@ void menu() {
 			}
 			case 4: {
 				int selecPila = seleccion_pila();
-				if (selecPila == 1) {
-					if (pila_vacia(pila)) {
-						cout<<"\n La pila esta vacia, no hay alumnos."<<endl;
-						break;
-					}
-					Nodo *aux = pila;
-					int contador = 0;
-					while(aux != NULL) {
-						contador++;
-						aux = aux->siguiente;
-					}
-					cout<<"La cantidad de alumnos en la pila N1 es de: "<<contador<<endl;
-				} else if (selecPila == 2) {
-					if (pila_vacia(pila2)) {
-						cout<<"\n La pila esta vacia, no hay alumnos."<<endl;
-						break;
-					}
-					Nodo *aux = pila2;
-					int contador = 0;
-					while(aux != NULL) {
-						contador++;
-						aux = aux->siguiente;
-					}
-					cout<<"La cantidad de alumnos en la pila N2 es de: "<<contador<<endl;
-				} else {
+				Nodo *aux;
+				
+				if(selecPila == 1) aux = pila;
+				else if (selecPila == 2) aux = pila2;
+				else {
 					cout<<"Seleccion de pila incorrecta"<<endl;	
+					break;
 				}	
+				int contador = 0;
+				while(aux != NULL) {
+					contador++;
+					aux = aux->siguiente;
+				}
+				cout<<"La cantidad de alumnos en la pila N1 es de: "<<contador<<endl;
 				break;
 			}
 			case 5: {
