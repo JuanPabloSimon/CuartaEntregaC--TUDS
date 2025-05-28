@@ -1,14 +1,14 @@
-# 📚 Gestión de Alumnos con Colas (C++)
+# 📚 Gestión de Alumnos con Colas y Pilas (C++)
 
-Este es un proyecto estudiantil en C++ que permite gestionar alumnos utilizando **colas dinamicas (manuales)**. Se pueden registrar múltiples alumnos, visualizarlos, buscar al de mayor edad y más, todo a través de un menú interactivo por consola.
+Este es un proyecto estudiantil en C++ que permite gestionar alumnos utilizando **colas dinamicas (manuales)** o **pilas dinámicas (manuales)**. Se pueden registrar múltiples alumnos, visualizarlos, buscar al de mayor edad y más, todo a través de un menú interactivo por consola.
 
 ## 🚀 Funcionalidades
 
-- Insertar alumnos en dos colas distintas.
-- Mostrar los elementos de una cola **sin modificarla**.
-- Obtener el alumno de mayor edad en una cola.
-- Contar la cantidad de alumnos en cada cola.
-- Eliminar todos los alumnos de una cola.
+- Insertar alumnos en dos colas o dos pilas distintas.
+- Mostrar los elementos de una cola o pila **sin modificarla**.
+- Obtener el alumno de mayor edad en una cola o pila.
+- Contar la cantidad de alumnos en cada cola o pila.
+- Eliminar todos los alumnos de una cola o pila.
 
 ## 🧱 Estructura del Código
 
@@ -25,7 +25,7 @@ struct Nodo {
     Alumno alu;
     Nodo *siguiente;
 };
-Las colas son manipuladas con punteros frente y fin.
+Las colas y pilas son manipuladas con punteros frente y fin.
 
 🖥️ Uso
 Compila el programa:
