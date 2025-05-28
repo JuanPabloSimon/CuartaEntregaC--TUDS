@@ -121,7 +121,7 @@ void menu() {
 				
 				cout<<"\n El alumno de la fila N"<<selecPila<<" con mayor edad es: "<<alumnoMayor.nombre<<", y tiene: "<<alumnoMayor.edad<<" años."<<endl;
 				break;
-			}
+			} 
 			case 4: {
 				int selecPila = seleccion_pila();
 				Nodo *aux;
